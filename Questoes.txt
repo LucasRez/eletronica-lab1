@@ -1,0 +1,6 @@
+Questao 2
+
+O circuito é chamado retificador porque, para uma tensão menor que a tensão de polarização direta do diodo, tornando-a reta independente da tensão de entrada.
+O circuito limitador tem esse nome porque ele limita a tensão máxima de saída para a tensão de polarização direta do diodo.
+
+Os circuitos da figura 1(c) e 1(d) do procedimento podem ser considerados limitadores, pois, no caso do circuito 1(c) ele limita a saida assimetricamente -1,0V < Vs < 2,4V , e no caso do circuito 1(d) ele limita simetricamente -2,4V < Vs < 2,4V.
