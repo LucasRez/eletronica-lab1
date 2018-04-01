@@ -4,7 +4,7 @@
 \usepackage[num]{abntex2cite}
 
 \titulo{Experimento 1: Circuitos com diodos}
-\autor{Lucas Rezende de Macedo - 14/0026363\\Jônatas Ribeiro Senna Pires - xx/xxxxxxx}
+\autor{Lucas Rezende de Macedo - 14/0026363\\Jônatas Ribeiro Senna Pires - 14/0090983}
 \data{31 de Março de 2018}
 \local{Brasília, Distrito Federal}
 
@@ -111,6 +111,57 @@ A característica de transferência é caracterizada pela figura \ref{fig:diff4}
 \chapter{Discussão}
 
 \section{Comparação com o modelo ideal}
+Para o circuito \ref{fig:circuitos}(a), um diodo ideal se comporta como um circuito aberto quando está inversamente polarizado, impedindo a passagem de corrente, zerando a saída. E o diodo se comporta como um curto circuito quando está diretamente polarizado,
+permitindo, instantâneamente, que toda a corrente disponível passe pelo dispositivo, copiando a entrada na saída, assim como mostrado em vermelho na figura \ref{fig:comp1}.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale = .7]{circuito-1a-esboco.png}
+  \caption{Esboço do comportamento esperado para um diodo ideal para o circuito 1.}
+  \label{fig:comp1}
+\end{figure}
+\pagebreak
+O resultado obtido no experimento é muito similar ao do diodo ideal, com pequenas diferenças nos momentos em que o diodo está diretamente polarizado, visto que o diodo real tem um comportamento exponencial somado a uma queda de tensão no dispositivo.
+Ao compararmos com o modelo de queda de tensão constante, podemos perceber que o comportamento é mais semelhante ao do diodo real, visto que considera a queda de tensão no dispositivo, mas com diferenças pois não considera o comportamento exponencial.
+
+\\Para o circuito \ref{fig:circuitos}(b), considerando diodos ideais, não teríamos o comportamento limitante, mas sim a saída sempre em 0 V, visto que sempre haveria um curto circuito entre Vs e o nó de referêcia (relacionando com o modelo de queda de tensão constante, teríamos Vd = 0 V, limitando sempre em 0). Comportamento demonstrado em vermelho na figura \ref{fig:comp2}.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale = .7]{circuito-1b-esboco.png}
+  \caption{Esboço do comportamento esperado para um diodo ideal.}
+  \label{fig:comp2}
+\end{figure}
+
+\\Entretanto, considerando o modelo de queda de tensão constante, um dos diodos limitaria a tensão em 1,1 V instantâneamente no regime positivo da fonte de tensão quando diretamente polarizado e o outro diodo limitaria instantâneamente em -1,1 V no regime negativo da
+fonte de tensão (quando este diodo estaria diretamente polarizado). Comportamento muito próximo do obtido experimentalmente, apenas não levando em consideração a curva exponencial durante a troca de regime da fonte de tensão e pequenas variações em Vd.
+
+% \pagebreak
+
+Para o circuito \ref{fig:circuitos}(c), se considerarmos o modelo de queda de tensão constante o modelo ideal de diodo zener, temos que quando o dispositivo está diretamente polarizado o circuito limita a saída em -Vd e quando está inversamente polarizado o circuito limata Vs em Vz. Assim como mostrado em vermelho na figura \ref{fig:comp3}.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale = .7]{circuito-1c-esboco.png}
+  \caption{Esboço do comportamento esperado para um diodo ideal.}
+  \label{fig:comp3}
+\end{figure}
+\pagebreak
+O comportamento do diodo real em relação ao ideal é muito similar, apenas não considerando a curva exponencial na troca de regime e pequenas variações em Vd e Vz.
+Se o diodo Zener ideal possuísse um comportamento semelhar ao diodo ideal, teríamos apenas um curto circuito para qualquer regime da fonte de tensão.
+
+\\Para o circuito \ref{fig:circuitos}(d), considerando o modelo de queda de tensão constante como o modelo ideal, temos o comportamento mostrado em vermelho na figura \ref{fig:comp4}.
+Um dos diodos limita a tensão em Vz durante o regime positivo da fonte e o outro diodo limita em -Vz durante o regime negativo da fonte.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale = .7]{circuito-1d-esboco.png}
+  \caption{Esboço do comportamento esperado para um diodo ideal.}
+  \label{fig:comp4}
+\end{figure}
+
+O comportamento do diodo real em relação ao ideal é muito similar, apenas não considerando a curva exponencial na troca de regime e pequenas variações em Vz.
+Se o diodo Zener ideal possuísse um comportamento semelhar ao diodo ideal, teríamos apenas um curto circuito para qualquer regime da fonte de tensão.
 
 \section{Circuitos retificadores e limitadores}
 
