@@ -59,60 +59,71 @@ Para a segunda montagem do circuito da figura \ref{fig:circuito1}, com a carga (
 \pagebreak
 \section{Experiência 2}
 
-Para o circuito da figura \ref{fig:circuitos}(b) temos que a entrada ($v_I$) e saída ($v_o$) são definidas conforme a figura \ref{fig:io2}  em que, no intervalo entre $x_0$ e $x_1$, o diodo $D_2$ encontra-se diretamente polarizado e $D_1$ encontra-se inversamente polarizado, no intervalo $x_1$ a $x_2$, $D_2$ encontra-se reversamente polarizado e $D_1$ encontra-se diretamente polarizado, para esse circuito, não houve ruptura.
+Para o circuito da figura \ref{fig:circuito2}, realizamos a montagem com um resistor $R = 992.3\Omega$ com o capacitor $C = 1000\mu F$, $25V$. Para cada valor de resistência de carga ($R_L$) medimos os valores de tensão presentes na tabela \ref{tab:tensoes}.
 
-A característica de transferência é caracterizada pela figura \ref{fig:diff2}.
+Para obter a resistência de carga ($R_L = 492.15\Omega$) utilizamos dois resistores de resitência nominal $1k\Omega$ em paralelo. De forma análoga, para obter a resistência de carga ($R_L = 315.3\Omega$), utilizamos um resistor de $100\Omega$ e um de $220\Omega$ em série.
 
-\begin{figure}[h]
-  \centering
-  \includegraphics[scale = 0.7]{diferenca-1b.png}
-  \caption{Gráfico da característica de transferência do circuito da figura \ref{fig:circuitos}(b) em que $v_o$ está no eixo horizontal e $v_I$ está no eixo vertical.}
-  \label{fig:diff2}
-\end{figure}
-\pagebreak
-\section{Experiência 3}
+As tensões no capacitor e na carga para os valore de $R_L$ podem ser verificados nos gráficos das figuras \ref{fig:graf1} a \ref{fig:graf5}
 
-Para o circuito da figura \ref{fig:circuitos}(c) temos que a entrada ($v_I$) e saída ($v_o$) são definidas conforme a figura \ref{fig:io3}  em que, no intervalo entre $x_0$ e $x_1$, o diodo $D$ encontra-se em ruptura, no intervalo $x_1$ a $x_2$, $D$ encontra-se diretamente polarizado, para esse circuito, houve polarização reversa em $D$ nos instantes $x_0$ e $x_2$.
-
-A característica de transferência é caracterizada pela figura \ref{fig:diff3}.
-
-\begin{figure}[h]
-  \centering
-  \includegraphics[scale = 0.7]{circuito-1c-esboco2.png}
-  \caption{Gráfico da entrada (verde) e saída (amarelo) do circuito da figura \ref{fig:circuitos}(c).}
-  \label{fig:io3}
-\end{figure}
-
-\begin{figure}[h]
-  \centering
-  \includegraphics[scale = 0.7]{diferenca-1c.png}
-  \caption{Gráfico da característica de transferência do circuito da figura \ref{fig:circuitos}(c) em que $v_o$ está no eixo horizontal e $v_I$ está no eixo vertical.}
-  \label{fig:diff3}
-\end{figure}
-\pagebreak
-\section{Experiência 4}
-
-Para o circuito da figura \ref{fig:circuitos}(d) temos que a entrada ($v_I$) e saída ($v_o$) são definidas conforme a figura \ref{fig:io4}  em que, no intervalo entre $x_0$ e $x_1$, o diodo $D_2$ encontra-se diretamente polarizado e $D_1$ encontra-se em ruptura, no intervalo $x_1$ a $x_2$, $D_2$ encontra-se em ruptura e $D_1$ encontra-se diretamente polarizado, para esse circuito, houve polarização inversa em $D_1$ nos momentos $x_0$ e $x_2$ e em $D_2$ no momento $x_1$.
-
-A característica de transferência é caracterizada pela figura \ref{fig:diff4}.
+\begin{table}[h]
+\centering
+\begin{tabular}{|l|l|l|l|l|}
+\hline
+$R_L(\Omega)$ & $V_{DC}$(V) & $V_{DC}(\infty) - V_{DC}(R_L)$ (V) & $V_{PP}^C$ (mV) & $V_{PP}^{R_L}$ (mV) \\
+\hline
+\infty        & 8,74      & 0                              & 146             & 10                  \\
+\hline
+2,17k         & 8,67      & 0,07                           & 150             & 10                  \\
+\hline
+985           & 8,33      & 0,41                           & 156             & 76                  \\
+\hline
+492,15        & 5,48      & 3,26                           & 206             & 66                  \\
+\hline
+315,3         & 3,96      & 4,78                           & 230             & 58                  \\
+\hline
+\end{tabular}
+\label{tab:tensoes}
+\caption{Tabela de valores de tensão para cada valor de $R_L$.}
+\end{table}
 
 \begin{figure}[h]
   \centering
-  \includegraphics[scale = 0.6]{circuito-1d-esboco2.png}
-  \caption{Gráfico da entrada (verde) e saída (amarelo) do circuito da figura \ref{fig:circuitos}(d).}
-  \label{fig:io4}
+  \includegraphics[scale = 0.7]{exp2-1.png}
+  \caption{Gráfico da tensão no capacitor (azul) e na saída (rosa) do circuito da figura \ref{fig:circuito2} com a carga ($R_L = \infty$).}
+  \label{fig:graf1}
 \end{figure}
 
 \begin{figure}[h]
   \centering
-  \includegraphics[scale = 0.6]{diferenca-1d.png}
-  \caption{Gráfico da característica de transferência do circuito da figura \ref{fig:circuitos}(d) em que $v_o$ está no eixo horizontal e $v_I$ está no eixo vertical.}
-  \label{fig:diff4}
+  \includegraphics[scale = 0.7]{exp2-2.png}
+  \caption{Gráfico da tensão no capacitor (azul) e na saída (rosa) do circuito da figura \ref{fig:circuito2} com a carga ($R_L = 2,17k\Omega$).}
+  \label{fig:graf2}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale = 0.7]{exp2-3.png}
+  \caption{Gráfico da tensão no capacitor (azul) e na saída (rosa) do circuito da figura \ref{fig:circuito2} com a carga ($R_L = 985\Omega$).}
+  \label{fig:graf3}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale = 0.7]{exp2-4.png}
+  \caption{Gráfico da tensão no capacitor (azul) e na saída (rosa) do circuito da figura \ref{fig:circuito2} com a carga ($R_L = 492.15\Omega$).}
+  \label{fig:graf4}
+\end{figure}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale = 0.7]{exp2-5.png}
+  \caption{Gráfico da tensão no capacitor (azul) e na saída (rosa) do circuito da figura \ref{fig:circuito2} com a carga ($R_L = 315.3\Omega$).}
+  \label{fig:graf5}
 \end{figure}
 \pagebreak
 \chapter{Discussão}
 
-\section{Questão 1 - Comparação com o modelo ideal}
+\section{Questão 1 - Comportamento com a redução de $R_L$}
 Para o circuito \ref{fig:circuitos}(a), um diodo ideal se comporta como um circuito aberto quando está inversamente polarizado, impedindo a passagem de corrente, zerando a saída. E o diodo se comporta como um curto circuito quando está diretamente polarizado,
 permitindo, instantâneamente, que toda a corrente disponível passe pelo dispositivo, copiando a entrada na saída, assim como mostrado em vermelho na figura \ref{fig:comp1}.
 
@@ -165,7 +176,9 @@ Um dos diodos limita a tensão em Vz durante o regime positivo da fonte e o outr
 O comportamento do diodo real em relação ao ideal é muito similar, apenas não considerando a curva exponencial na troca de regime e pequenas variações em Vz.
 Se o diodo Zener ideal possuísse um comportamento semelhar ao diodo ideal, teríamos apenas um curto circuito para qualquer regime da fonte de tensão.
 
-\section{Questão 2 - Circuitos retificadores e limitadores}
+\section{Questão 2 - Comportamento com retificador de onda completa}
+
+% O periodo de ripple eh menor pq a frequencia dobra e o ripple diminui
 
 O circuito retificador tem esse nome dado que para uma tensão menor que sua tensão de polarização direta ($V_d$), a saída torna-se uma tensão contínua, como podemos ver na figura \ref{fig:retificador}, no caso do circuito da figura \ref{fig:circuitos}(a) essa tensão de saída é 0.
 
