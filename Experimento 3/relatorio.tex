@@ -24,7 +24,7 @@ imagem \ref{fig:circuitop}
 
 \begin{figure}[h]
   \centering
-  \includegraphics[scale = 0.7]{circuitop.png}
+  \includegraphics[scale = 0.5]{circuitop.png}
   \caption{Circuito que modela o sistema cardiovascular simulado no procedimento experimental.}
   \label{fig:circuitop}
 \end{figure}
@@ -32,133 +32,144 @@ imagem \ref{fig:circuitop}
 
 \section{Experiência}
 
-Foi escolhido o simulador LTSpice para a realização do experimento. Foi
-
-\begin{figure}[h]
-  \centering
-  \includegraphics[scale = 0.7]{exp1-1.png}
-  \caption{Gráfico da entrada (azul) e saída (rosa) do circuito da figura \ref{fig:circuito1} sem a carga ($R_L$).}
-  \label{fig:io1}
-\end{figure}
-
-Para a segunda montagem do circuito da figura \ref{fig:circuito1}, com a carga ($R_L) = 2.17 k\Omega$, temos que a entrada ($v_I$) e saída no capacitor ($v_o$) são definidas conforme a figura \ref{fig:io2}.
-
-\begin{figure}[h]
-  \centering
-  \includegraphics[scale = 0.7]{exp1-2.png}
-  \caption{Gráfico da entrada (azul) e saída (rosa) do circuito da figura \ref{fig:circuito1} com a carga ($R_L$).}
-  \label{fig:io2}
-\end{figure}
-
+Foi escolhido o simulador LTSpice para a realização do experimento. Após a montagem do esquemático no programa (de acordo com a figura \ref{fig:circuitop}).
+\\Foram coletadas as curvas de tensão do sinal referente a pressão na entrada da artéria aorta (saída do ventrículo esquerdo) com o offset de 7,4V na fonte de tensão 2 sugerido pelo artigo lido, como mostra a figura \ref{fig:aorta1}.
 \pagebreak
-\section{Experiência 2}
-
-Para o circuito da figura \ref{fig:circuito2}, realizamos a montagem com um resistor $R = 992.3\Omega$ com o capacitor $C = 1000\mu F$, $25V$. Para cada valor de resistência de carga ($R_L$) medimos os valores de tensão presentes na tabela \ref{tab:tensoes}.
-
-Para obter a resistência de carga ($R_L = 492.15\Omega$) utilizamos dois resistores de resitência nominal $1k\Omega$ em paralelo. De forma análoga, para obter a resistência de carga ($R_L = 315.3\Omega$), utilizamos um resistor de $100\Omega$ e um de $220\Omega$ em série.
-
-As tensões no capacitor e na carga para os valore de $R_L$ podem ser verificados nos gráficos das figuras \ref{fig:graf1} a \ref{fig:graf5}
-
-\begin{table}[h]
-\centering
-\begin{tabular}{|l|l|l|l|l|}
-\hline
-$R_L(\Omega)$ & $V_{DC}$(V) & $V_{DC}(\infty) - V_{DC}(R_L)$ (V) & $V_{PP}^C$ (mV) & $V_{PP}^{R_L}$ (mV) \\
-\hline
-\infty        & 8,74      & 0                              & 146             & 10                  \\
-\hline
-2,17k         & 8,67      & 0,07                           & 150             & 10                  \\
-\hline
-985           & 8,33      & 0,41                           & 156             & 76                  \\
-\hline
-492,15        & 5,48      & 3,26                           & 206             & 66                  \\
-\hline
-315,3         & 3,96      & 4,78                           & 230             & 58                  \\
-\hline
-\end{tabular}
-\label{tab:tensoes}
-\caption{Tabela de valores de tensão para cada valor de $R_L$.}
-\end{table}
-
 \begin{figure}[h]
   \centering
-  \includegraphics[scale = 0.7]{exp2-1.png}
-  \caption{Gráfico da tensão no capacitor (azul) e na saída (rosa) do circuito da figura \ref{fig:circuito2} com a carga ($R_L = \infty$).}
-  \label{fig:graf1}
+  \includegraphics[scale = 0.3]{aorta_v10_v274.png}
+  \caption{Gráfico da tensão referente à pressão arterial na entrada da artéria aorta com offset de 7,4V na fonte 2}
+  \label{fig:aorta1}
 \end{figure}
 
-\begin{figure}[h]
-  \centering
-  \includegraphics[scale = 0.7]{exp2-2.png}
-  \caption{Gráfico da tensão no capacitor (azul) e na saída (rosa) do circuito da figura \ref{fig:circuito2} com a carga ($R_L = 2,17k\Omega$).}
-  \label{fig:graf2}
-\end{figure}
+\\Foram coletadas as curvas de tensão do sinal referente a pressão na entrada da artéria pulmonar (saída do ventrículo direito) com o offset de 7,4V na fonte de tensão 2 sugerido pelo artigo lido, como mostra a figura \ref{fig:pulmonar1}.
 
 \begin{figure}[h]
   \centering
-  \includegraphics[scale = 0.7]{exp2-3.png}
-  \caption{Gráfico da tensão no capacitor (azul) e na saída (rosa) do circuito da figura \ref{fig:circuito2} com a carga ($R_L = 985\Omega$).}
-  \label{fig:graf3}
+  \includegraphics[scale = 0.3]{pulmonar_v10_v274.png}
+  \caption{Gráfico da tensão referente à pressão arterial na entrada da artéria pulmonar com offset de 7,4V na fonte 2}
+  \label{fig:pulmonar1}
 \end{figure}
+
+\\Foram coletadas as curvas de tensão do sinal referente a pressão na entrada do ventrículo esquerdo, com o offset de 7,4V na fonte de tensão 2 sugerido pelo artigo lido, como mostra a figura \ref{fig:ventriculo1}.
 
 \begin{figure}[h]
   \centering
-  \includegraphics[scale = 0.7]{exp2-4.png}
-  \caption{Gráfico da tensão no capacitor (azul) e na saída (rosa) do circuito da figura \ref{fig:circuito2} com a carga ($R_L = 492.15\Omega$).}
-  \label{fig:graf4}
-\end{figure}
-
-\begin{figure}[h]
-  \centering
-  \includegraphics[scale = 0.7]{exp2-5.png}
-  \caption{Gráfico da tensão no capacitor (azul) e na saída (rosa) do circuito da figura \ref{fig:circuito2} com a carga ($R_L = 315.3\Omega$).}
-  \label{fig:graf5}
+  \includegraphics[scale = 0.3]{ventriculo_esq_v10_v274.png}
+  \caption{Gráfico da tensão referente à pressão arterial na entrada do ventrículo esquerdo com offset de 7,4V na fonte 2}
+  \label{fig:ventriculo1}
 \end{figure}
 \pagebreak
+\\\\Para efeitos de comparação, também foram coletados os dados nos mesmos pontos, mas com diferentes offsets nas fontes, assim como indicados nas figuras de \ref{fig:aorta2} e \ref{fig:ventriculo3}
+\\Curvas de tensão do sinal referente a pressão na entrada da artéria aorta (saída do ventrículo esquerdo) com nenhum offset aplicado em ambas as fontes, como mostra a figura \ref{fig:aorta2}.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale = 0.3]{aorta_v10_v20.png}
+  \caption{Gráfico da tensão referente à pressão arterial na entrada da artéria aorta sem offset em ambas as fontes}
+  \label{fig:aorta2}
+\end{figure}
+
+\\Curvas de tensão do sinal referente a pressão na entrada da artéria pulmonar (saída do ventrículo direito) com nenhum offset aplicado em ambas as fontes, como mostra a figura \ref{fig:pulmonar2}.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale = 0.3]{pulmonar_v10_v20.png}
+  \caption{Gráfico da tensão referente à pressão arterial na entrada da artéria pulmonar sem offset em ambas as fontes}
+  \label{fig:pulmonar2}
+\end{figure}
+\pagebreak
+
+\\Curvas de tensão do sinal referente a pressão na entrada do ventrículo esquerdo, com nenhum offset aplicado em ambas as fontes, como mostra a figura \ref{fig:ventriculo2}.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale = 0.3]{ventriculo_esq_v10_v20.png}
+  \caption{Gráfico da tensão referente à pressão arterial na entrada do ventrículo esquerdo sem offset em ambas as fontes}
+  \label{fig:ventriculo2}
+\end{figure}
+
+\\Curvas de tensão do sinal referente a pressão na entrada da artéria aorta (saída do ventrículo esquerdo) com offset de 7,4V aplicado em ambas as fontes, como mostra a figura \ref{fig:aorta3}.
+\pagebreak
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale = 0.3]{aorta_v174_v274.png}
+  \caption{Gráfico da tensão referente à pressão arterial na entrada da artéria aorta com offset de 7,4V em ambas as fontes}
+  \label{fig:aorta3}
+\end{figure}
+
+\\Curvas de tensão do sinal referente a pressão na entrada da artéria pulmonar (saída do ventrículo direito) com offset de 7,4V aplicado em ambas as fontes, como mostra a figura \ref{fig:pulmonar3}.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale = 0.3]{pulmonar_v174_v274.png}
+  \caption{Gráfico da tensão referente à pressão arterial na entrada da artéria pulmonar com offset de 7,4V em ambas as fontes}
+  \label{fig:pulmonar3}
+\end{figure}
+\pagebreak
+Curvas de tensão do sinal referente a pressão na entrada do ventrículo esquerdo, com offset de 7,4V aplicado em ambas as fontes, como mostra a figura \ref{fig:ventriculo3}.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale = 0.3]{ventriculo_esq_v174_v274.png}
+  \caption{Gráfico da tensão referente à pressão arterial na entrada do ventrículo esquerdo com offset de 7,4V em ambas as fontes}
+  \label{fig:ventriculo3}
+\end{figure}
+
 \chapter{Discussão}
 
-\section{Questão 1 - Comportamento com a redução de $R_L$}
+\section{Questão 1 - Comparação entre gráficos simulados e esperados}
 
-O comportamento geral do circuito com a redução de $R_L$ é dado pela diminuição da componente DC conforme o aumento da amplitude de $V_r_i_p_p_l_e$. No circuito retificador de meia onda a formula para esta tensão é
-dado pela equação \ref{eq:ripp}, pela qual podemos deduzir o comportamento de aumento de $V_r_i_p_p_l_e$ com a redução da resistência aplicada.
+Podemos observar pela figura \ref{fig:aorta1} que a curva de entrada da artéria aorta possui formato semelhante apesar de ser mais suave que a obtida no artigo[4], devido ao modelo utilizado por nós ser mais simplificado que o modelo utilizado no artigo.
 
-\begin{equation}
-  V_r_i_p_p_l_e = \frac{V-V_d^o^n}{RCf_i_n}
-  \label{eq:ripp}
-\end{equation}
+A curva de entrada da artéria pulmonar obtida na simulação (figura \ref{fig:pulmonar1}) é diferente da curva do artigo, provavelmente devido às simplificações feitas no circuito simulado.
 
-Vpp no capacitor aumenta visto que menos potência é dissipada no resistor, descarregando o capacitor mais lentamente.
-Vpp no resistor aumenta por depender da tensão no capacitor a qual aumentou com a diminuição da resistência $R_L$.
+A curva de entrada do ventriculo esquerdo simulada (figura \ref{fig:ventriculo1}) é bastante semelhante à curva obtida no artigo, devidao ao fate de essa parte do circuito ser a parte na qual foram realizadas menos simplificações.
 
+\section{Questão 2 - Quais as grandezas elétricas equivalentes às grandezas de pressão arterial, fluxo sanguíneo, volume, resistência e complacência no sistema cardiovascular?}
 
+As grandezas elétricas equivalentes ãs grandezas de pressão arterial, fluxo sanguíneo, volume, resistencia e complacência são as seguintes:
 
-\section{Questão 2 - Comparação com o funcionamento de um retificador de onda completa}
+\begin{itemize}
+  \item {Pressão arterial: Voltagem}
+  \item {Fluxo sanguíneo: Corrente életrica}
+  \item {Volume: Carga életrica}
+  \item {Resistência: Resistência}
+  \item {Complacência: Capacitância}
+\end{itemize}
 
+\section{Questão 3 - Relação entre as válvulas e os diodos}
 
-Se o circuito montado fosse um retificador de onda completa, teríamos o esquemático mostrado na figura \ref{fig:retComp}.
+Tomando como base a figura \ref{fig:coracao}, é possível afirmar que as válvulas se referenciam aos seguintes diodos:
+\begin{itemize}
+  \item {Válvula 1 - diodo DRA}
+  \item {Válvula 2 - diodo DRV}
+  \item {Válvula 3 - diodo DLA}
+  \item {Válvula 4 - diodo DLV}
+\end{itemize}
 
 \begin{figure}[h]
   \centering
-  \includegraphics[scale = .7]{retComp.png}
-  \caption{Esboço do circuito de um retificador completo com carga $R_L$.}
-  \label{fig:retComp}
+  \includegraphics[scale = 0.4]{coracao.png}
+  \caption{Modelo do coração como duas bombas hidráulicas; Válvulas representadas de 1 a 4.}
+  \label{fig:coracao}
 \end{figure}
+\pagebreak
 
-O retificador de onda completa funciona de forma a aproveitar os momentos em que a onda de entrada está negativa. Ao analisar a equação (equação  \ref{eq:retComp}) que define $V_r_i_p_p_l_e$ para um retificador de onda completa é possível
-chegar a algumas conclusões.
-\begin{equation}
-  V_r_i_p_p_l_e = \frac{V-2V_d^o^n}{RC2f_i_n}
-  \label{eq:retComp}
-\end{equation}
+\section{Questão 4 - Significado das abreviaturas}
+
+Os significados das siglas dos compartimentos utilizados e os componentes do circuito que os representam são os seguintes:
 
 \begin{itemize}
-  \item $V_r_i_p_p_l_e$ vai diminuir pela metade porque a frequência dobrou;
-  \item $V_r_i_p_p_l_e$ Vai diminuir pois é reduzido de mais uma queda de tensão relacionada aos diodos adicionados;
-  \item A frequência de $V_r_i_p_p_l_e$ vai dobrar por causa do aumento da frequência do sinal de entrada.
+  \item {ev: sistema venoso extra-esplâncnico (\emph{extrasplanchnic venous}) - $R_{ev}$, $C_{ev}$}
+  \item {ep: sistema periférico extra-esplâncnico (\emph{extrasplanchnic peripheral}) - $R_{ep}$, $C_{ep}$}
+  \item {sv: sistema venoso esplâncnico (\emph{splanchnic venous}) - $R_{sv}$, $C_{sv}$}
+  \item {sp: sistema periférico esplâncnico (\emph{splanchnic peripheral}) - $R_{sp}$, $C_{sp}$}
+  \item {pv: sistema venoso pulmonar (\emph{pulmonary venous}) - $R_{pv}$, $C_{pv}$}
+  \item {pp: sistema periférico pulmonar (\emph{pulmonary peripheral}) - $R_{pp}$, $C_{pp}$}
+  \item {pa: sistema arterial pulmonar (\emph{pulmonary arterial}) - $L_{pa}$, $R_{pa}$, $C_{pa}$}
+  \item {sa: artérias sistemicas (\emph{systemic arteries}) - $R_{sa}$, $R_{sa}$, $C_{sa}$}
 \end{itemize}
-
-Como $V_r_i_p_p_l_e$ é um efeito indesejado, se fosse trocado um circuito retificador de meia onda por um circuito retificador de onda completa,
-seria obtido um resultado final com $V_r_i_p_p_l_e$ menor, obtendo, assim, um resultado de saída com maior precisão.
 
 \section*{Referências}
 
@@ -166,5 +177,15 @@ seria obtido um resultado final com $V_r_i_p_p_l_e$ menor, obtendo, assim, um re
 [1] SEDRA, Adel S.; SMITH, Kenneth Carless. Microelectronic circuits. New York: Oxford University Press, 1998.
 
 [2] RAZAVI, Behzad; BEHZAD, Razavi. RF microelectronics. New Jersey: Prentice Hall, 1998.
+
+[3] MIRZAEE, Mohammad Reza, et. al. “Simulating of human cardiovascular system and blood vessel
+obstruction using lumped method”. World Academy of Science, Engineering and Technology, 2008, vol.
+41.
+
+[4] MOSSA, Hassanain Ali Lafta Mossa. “Engineering Modeling of Human Cardiovascular System”. 1st
+International Conference of Eng. Sci. NUCEJ Spatial ISSUE, vol. 11, no. 2, Proceedings, 2008. pp. 307-
+314.
+
+[5] O CORAÇÃO COMO BOMBA (HIDRÁULICA). ROCHA,  Adson. Disponível em: <https://youtu.be/yhnFyU_M-uQ>. Acesso em: 14 abr. 2018.
 
 \end{document}
