@@ -1,0 +1,4 @@
+Resistencias
+Rb = 10k = 9.89k
+Rc = 100 = 99.62
+Rc = 300 = 298.8

@@ -1,0 +1,2 @@
+Ib = (Vbb - Vbe) / Rb
+Ic = (Vcc - Vce) / Rc
