@@ -17,6 +17,7 @@
 
 \tableofcontents
 \listoffigures
+\listoftables
 \clearpage
 
 \chapter{Experiências}
@@ -76,8 +77,8 @@ $V_{BB}(V)$ & $V_{BE}$(V) & $V_{CE}$(V) & $I_B$ (A) & $I_C$ (A) \\
 5         & 0,767      & 2,18                           & 0,42m             & 78,49m                  \\
 \hline
 \end{tabular}
-\label{tab:exp11}
 \caption{Tabela com os valores de $V_{BB}$, $V_{BE}$, $V_{CE}$, $I_B$, $I_C$ para $V_{CC} = 10V$.}
+\label{tab:exp11}
 \end{table}
 
 \begin{table}[h]
@@ -103,8 +104,8 @@ $V_{BB}(V)$ & $V_{BE}$(V) & $V_{CE}$(V) & $I_B$ (A) & $I_C$ (A) \\
 5         & 0,78      & 0,29                           & 0,42m             & 47,27m                  \\
 \hline
 \end{tabular}
-\label{tab:exp12}
 \caption{Tabela com os valores de $V_{BB}$, $V_{BE}$, $V_{CE}$, $I_B$, $I_C$ para $V_{CC} = 5V$.}
+\label{tab:exp12}
 \end{table}
 
 \begin{table}[h]
@@ -130,8 +131,8 @@ $V_{BB}(V)$ & $V_{BE}$(V) & $V_{CE}$(V) & $I_B$ (A) & $I_C$ (A) \\
 5         & 0,676      & 4,28m                           & 0,43m             & -429,63m                  \\
 \hline
 \end{tabular}
-\label{tab:exp13}
 \caption{Tabela com os valores de $V_{BB}$, $V_{BE}$, $V_{CE}$, $I_B$, $I_C$ para $V_{CC} = 0V$.}
+\label{tab:exp13}
 \end{table}
 
 \subsection{Experiência 2}
@@ -171,8 +172,8 @@ T1  & 10 & 5 & 1,2 & 0,68 & 9,89k & 298,8 & 16,73m & 525,78m \\
 T2  & 10 & 5 & 1,21 & 0,69 & 9,89k & 298,8 & 16,73m & 525,78m \\
 \hline
 \end{tabular}
-\label{tab:exp21}
 \caption{Tabela com os valores de $V_{CC}$ $V_{CE}$, $V_{BB}$, $V_{BE}$, $R_B$, $R_C$, $I_B$, $I_C$ para os transistores BC548.}
+\label{tab:exp21}
 \end{table}
 
 \begin{table}[h]
@@ -186,34 +187,39 @@ T1  & 10 & 5 & 3,09 & 0,67 & 9,89k & 298,8 & 16,73m & 0,24m \\
 T2  & 10 & 5 & 3,00 & 0,70 & 9,89k & 298,8 & 16,73m & 0,23m \\
 \hline
 \end{tabular}
-\label{tab:exp22}
 \caption{Tabela com os valores de $V_{CC}$ $V_{CE}$, $V_{BB}$, $V_{BE}$, $R_B$, $R_C$, $I_B$, $I_C$ para os transistores TIP31.}
+\label{tab:exp22}
 \end{table}
 
 \chapter{Discussão}
 
 \section{Questão 1 - Construção dos gráficos}
 
+A partir dos dados coletados foram construídos dos gráficos das figuras \ref{fig:curva1} e \ref{fig:curva2} que representam as curvas pedidas.
 
-\section{Questão 2 - Estimar \Beta}
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale = 0.5]{icxvbe.png}
+  \caption{Curva $I_C$ x $V_B_E$.}
+  \label{fig:curva1}
+\end{figure}
 
 
+\begin{figure}[h]
+  \centering
+  \includegraphics[scale = 0.5]{icxvce.png}
+  \caption{Curva $I_C$ x $V_C_E$.}
+  \label{fig:curva2}
+\end{figure}
+
+Podemos observar que o aumento de $V_{CC}$, $V_{BE}$, $V_{BB}$ aumenta o valor de $I_C$ e o aumento de $V_{CE}$ diminui o valor de $I_C$.
+
+\clearpage
 
 \section*{Referências}
-
 
 [1] SEDRA, Adel S.; SMITH, Kenneth Carless. Microelectronic circuits. New York: Oxford University Press, 1998.
 
 [2] RAZAVI, Behzad; BEHZAD, Razavi. RF microelectronics. New Jersey: Prentice Hall, 1998.
-
-[3] MIRZAEE, Mohammad Reza, et. al. “Simulating of human cardiovascular system and blood vessel
-obstruction using lumped method”. World Academy of Science, Engineering and Technology, 2008, vol.
-41.
-
-[4] MOSSA, Hassanain Ali Lafta Mossa. “Engineering Modeling of Human Cardiovascular System”. 1st
-International Conference of Eng. Sci. NUCEJ Spatial ISSUE, vol. 11, no. 2, Proceedings, 2008. pp. 307-
-314.
-
-[5] O CORAÇÃO COMO BOMBA (HIDRÁULICA). ROCHA,  Adson. Disponível em: $https://youtu.be/yhnFyU_M-uQ$. Acesso em: 14 abr. 2018.
 
 \end{document}

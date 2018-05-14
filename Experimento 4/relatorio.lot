@@ -1,0 +1,6 @@
+\select@language {brazil}
+\contentsline {table}{\numberline {1}{\ignorespaces Tabela com os valores de $V_{BB}$, $V_{BE}$, $V_{CE}$, $I_B$, $I_C$ para $V_{CC} = 10V$.}}{6}{table.1.1}
+\contentsline {table}{\numberline {2}{\ignorespaces Tabela com os valores de $V_{BB}$, $V_{BE}$, $V_{CE}$, $I_B$, $I_C$ para $V_{CC} = 5V$.}}{6}{table.1.2}
+\contentsline {table}{\numberline {3}{\ignorespaces Tabela com os valores de $V_{BB}$, $V_{BE}$, $V_{CE}$, $I_B$, $I_C$ para $V_{CC} = 0V$.}}{6}{table.1.3}
+\contentsline {table}{\numberline {4}{\ignorespaces Tabela com os valores de $V_{CC}$ $V_{CE}$, $V_{BB}$, $V_{BE}$, $R_B$, $R_C$, $I_B$, $I_C$ para os transistores BC548.}}{7}{table.1.4}
+\contentsline {table}{\numberline {5}{\ignorespaces Tabela com os valores de $V_{CC}$ $V_{CE}$, $V_{BB}$, $V_{BE}$, $R_B$, $R_C$, $I_B$, $I_C$ para os transistores TIP31.}}{7}{table.1.5}
