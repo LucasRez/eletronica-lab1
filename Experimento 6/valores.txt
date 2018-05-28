@@ -1,41 +1,48 @@
 Exp1
+R = 200k
 R1 = 197.8k
 R2 = 202.3k
 V_Inversor = 1.7mV
 V_Ninversor = 1.7mV
-Ib+ = calcular
-Ib- = calcular
-Ib = calcular
+ib_pos = 8.4 nA
+ib_neg = 8.59 nA
+ib = 8.5 nA
+Ios = 0
 
+R = 100k
 R1 = 98.9k
 R2 = 98.3k
 V_Inversor = 0.8mV
 V_Ninversor = 0.8mV
-Ib+ = calcular
-Ib- = calcular
-Ib = calcular
+ib_pos = 8.14 nA
+ib_neg = 8.09 nA
+ib = 8.11 nA
+Ios = 0
 
+R = 100
 R1 = 99.9
 R2 = 99.0
 V_Inversor = 0V
 V_Ninversor = 0V
-Ib+ = calcular
-Ib- = calcular
-Ib = calcular
+ib_pos = 0.0 nA
+ib_neg = 0.0 nA
+ib = 0.0 nA
+Ios = 0
 
 ===========================
 Exp2
+R_i = 99.9
 R_100k = 98,9k
 V_o = -0.47V
-V_os = calcular
+V_os = -0.47mV
 
 R_200k = 202.3k
 V_o = -0.95V
-V_os = calcular
+V_os = -0.47mV
 
 R_1k = 978
 V_o = -5.1mV
-V_os = calcular
+V_os = -0.47mV
 
 ===========================
 Exp3
@@ -67,3 +74,6 @@ a) 100Hz = new_file7
 10kHz = new_file9
 100kHz = new_file10
 Calcular SR para 100kHz (new_file11 e 12)
+SR = 0.55V/us
+SR = 0.42V/us
+SR_med = 0.48V/us
