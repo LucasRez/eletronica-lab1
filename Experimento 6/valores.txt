@@ -1,0 +1,69 @@
+Exp1
+R1 = 197.8k
+R2 = 202.3k
+V_Inversor = 1.7mV
+V_Ninversor = 1.7mV
+Ib+ = calcular
+Ib- = calcular
+Ib = calcular
+
+R1 = 98.9k
+R2 = 98.3k
+V_Inversor = 0.8mV
+V_Ninversor = 0.8mV
+Ib+ = calcular
+Ib- = calcular
+Ib = calcular
+
+R1 = 99.9
+R2 = 99.0
+V_Inversor = 0V
+V_Ninversor = 0V
+Ib+ = calcular
+Ib- = calcular
+Ib = calcular
+
+===========================
+Exp2
+R_100k = 98,9k
+V_o = -0.47V
+V_os = calcular
+
+R_200k = 202.3k
+V_o = -0.95V
+V_os = calcular
+
+R_1k = 978
+V_o = -5.1mV
+V_os = calcular
+
+===========================
+Exp3
+Imagens
+new_file0
+Vpp_in = 2.2V
+Vpp_Ninv = 23V
+new_file1
+Vpp_in = 2.2
+Vpp_Inv = 23V
+===========================
+Exp4
+fig 4.1
+c)new_file3
+R_out = 98.3k
+R_in = 98.9k
+d)new_file4
+Amplitude = 3.9V
+Vpp = 8.08V
+fig 4.2
+c)new_file5
+d)new_file6
+Amplitude = 3.7V
+Vpp = 7.84V
+===========================
+Exp5
+a) 100Hz = new_file7
+1kHz = new_file8
+10kHz = new_file9
+100kHz = new_file10
+Calcular SR para 100kHz (new_file11 e 12)
