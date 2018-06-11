@@ -1,0 +1,66 @@
+R1 = 1k = 983
+R2 = 10k = 9.826k
+R3 = 1k = 990
+R4 = 100k = 100.1k
+
+========================================
+Exp1
+A) R3 ~= 1k = 990
+Vin = 92mVpp
+Vo = 1.04Vpp
+B) new file 13
+
+C)achar onde Vo ~= 0,7 Vo original
+
+D)
+2Hz   94m  1.02  2
+10    94m  1.02  7
+30    94m  1.00  8
+100   92m  1.00  5
+500   92m  1.00  5
+1k    94m  1.01  7
+5k    92m  1.00  7
+10k   92m  1.00  10
+30k   94m  992m  17
+50k   94m  944m  28
+100k  92m  800m  50
+120k  94m  728m  53
+200k  94m  528m  79
+500k  92m  232m  115
+1M    94m  112m  144
+3M    92m  32m   -
+5M    88m  16m   -
+
+========================================
+Exp2
+
+A) Vin = 26mVpp
+Vo = 2.04Vpp
+new file 14
+
+B)
+
+2Hz   26m  2.04  7
+10    23m  2.00  8
+30    24m  2.04  10
+100   26m  2.20  14
+500   24m  2.08  15
+1k    24m  2.08  15
+5k    24m  1.96  30
+10k   24m  1.68  46
+15k   24m  1.40  55
+20k   24m  1.20  60
+30k   24m  880m  70
+50k   24m  560m  88
+100k  24m  320m  -
+500k  24m  80m   -
+1M    24m  40m   -
+3M    24m  16m   -
+5M    21m  8m    -
+
+C) comparar frequencia de corte com do exp1 e pa
+
+D) comparar com o esperado usando gain-bandwidth product
+da pra fazer com programinha
+
+OBS: falar que teve muito ruido na saida pra frequencias altas
