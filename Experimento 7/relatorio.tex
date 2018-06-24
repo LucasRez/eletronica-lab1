@@ -7,9 +7,9 @@
 
 
 
-\titulo{Experimento 6: Imperfeições CC e não-linearidades}
+\titulo{Experimento 7: Amplificadores operacionais – Resposta em frequência}
 \autor{Lucas Rezende de Macedo - 14/0026363\\Jônatas Ribeiro Senna Pires - 14/0090983}
-\data{4 de Junho de 2018}
+\data{20 de Junho de 2018}
 \local{Brasília, Distrito Federal}
 
 \begin{document}
@@ -26,18 +26,18 @@
 
 \chapter{Experiências}
 
- O objetivo do presente experimento consiste na verificação das características peculiares presentes
- em amplificadores operacionais reais, características as quais não são ideiais.
+ O objetivo do presente experimento consiste na verificação das características peculiares presentes na resposta
+ de amplificadores operacionais reais conforme a variação da frequência.
 
 \section{Experiência}
 \subsection{Experiência 1}
 
-Foi montado o circuito de acordo com a figura \ref{fig:circuito1}, obtendo, assim, a montagem da figura \ref{fig:montagem1}.
+Foi montado o circuito de acordo com a figura \ref{fig:circuito}, obtendo, assim, a montagem da figura \ref{fig:montagem1}.
 \begin{figure}[h]
   \centering
-  \includegraphics[scale = 0.5]{exp1.png}
-  \caption{Circuito de caracterização da corrente de polarização de entrada e da corrente de compensação de entrada.}
-  \label{fig:circuito1}
+  \includegraphics[scale = 0.5]{circuito.png}
+  \caption{Circuito amplificador não-inversor com compensação para efeito da corrente de polarização.}
+  \label{fig:circuito}
 \end{figure}
 
 Para este experimento, a mesma montagem foi realizada uma vez para cada um dos seguintes valores de $R_1$ e $R_2$ (medidos):
@@ -95,9 +95,9 @@ Após a aquisição de todos os dados necessários, foi construída a seguinte t
 
 \begin{table}[h!]
 \centering
-\begin{tabular}[width = 0.8\textwidth]{|l|l|l|l|l|l|l|l|l|l|}
+\begin{tabular}[width = 0.8\textwidth]{|l|l|l|l|}
   \hline
-  R1_{nominal} & R2_{nominal} & R1_{medido} & R2_{medido} & V^- (mV) & V^+ (mV) & I_B^- (nA) & I_B^+ (nA) & I_B (nA) & I_{OS} (nA) \\
+  Frequência (Hz) & Amplitude $V_1$ (V) & Amplitude $V_O$ & R2_{medido} & V^- (mV) & V^+ (mV) & I_B^- (nA) & I_B^+ (nA) & I_B (nA) & I_{OS} (nA) \\
   \hline
   200k\Omega & 200k\Omega & 197,8k\Omega & 202,3k\Omega & 1,7 & 1,7 & 8,59 & 8,4 & 8,5 & 0 \\
   \hline
